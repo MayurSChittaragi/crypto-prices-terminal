@@ -39,6 +39,7 @@ const price = {
 };
 
 const handleAPIError = (err) => {
+	// console.log(err);
 	if (err.response.status === 401) {
 		throw new Error(
 			"Your API Key is Invalid - Get at https://coinlayer.com"
